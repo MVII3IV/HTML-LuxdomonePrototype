@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="jquery/jquery.js"></script>
+    <script src="angular/angular.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+    <script>
+        var app = angular.module("app", []);
+        app.controller("mainController", function ($scope, $interval) {
+
+            $interval(function () {
+                $scope.clock = Date.now();
+            }, 1000);
+
+
+        });
+    </script>
+
+    <style>
+        .navbar-inverse {
+            background-color: #000;
+            border-color: #080808;
+        }
+
+        .navbar .navbar-nav {
+            display: inline-block;
+            float: none;
+            vertical-align: top;
+        }
+
+        .navbar .navbar-collapse {
+            text-align: center;
+        }
+
+        .navbar-nav>li>a {
+            padding-top: 5px !important;
+            padding-bottom: 5px !important;
+        }
+
+        .navbar {
+            min-height: 32px !important
+        }
+
+        body {
+            background-image: url("public/img/background.png");
+            background-color: black;
+        }
+
+        .row {
+            text-align: center;
+        }
+
+        .col-md-2 {
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body ng-app="app" ng-controller="mainController">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a>{{ clock | date:'h:mm a'}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <h1>hola</h1>
+            </div>
+
+            <div class="col-md-2">
+                <h1>hola</h1>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
