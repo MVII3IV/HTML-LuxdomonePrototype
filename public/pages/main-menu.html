@@ -1,0 +1,65 @@
+<!--Large Ones-->
+<div class="col-xs-2 element-large center-large">
+    <i class="fa fa-tablet" aria-hidden="true" ng-show="true"></i>
+    <p ng-show="true">DEVICES</p>
+</div>
+
+<div class="col-xs-2 element-large center-large">
+    <i class="fa fa-line-chart" aria-hidden="true"></i>
+    <p ng-show="true">CONSUMO</p>
+</div>
+<!--Large Ones-->
+
+
+<!--Small Ones-->
+<a href="#/lights"> 
+    <div class="col-xs-2 element center">
+        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+        <p ng-show="true">LUCES</p>    
+    </div>
+</a>
+
+<div class="col-xs-2 element center">
+        <i class="fa fa-leaf" aria-hidden="true"></i>
+        <p ng-show="true">RIEGO</p>
+</div>
+
+<div class="col-xs-2 element center">
+    <i class="fa fa-line-chart" aria-hidden="true"></i>
+    <p ng-show="true">ACCESOS</p>
+</div>
+
+<div class="col-xs-2 element center">
+    <i class="fa fa-retweet" aria-hidden="true"></i>
+    <p ng-show="true">RUTINAS</p>
+</div>
+
+<div class="col-xs-2 element center">
+    <i class="fa fa-cogs" aria-hidden="true"></i>
+    <p ng-show="true">CONFIGURAR</p>
+</div>
+<!--Small Ones-->
+
+<script>
+
+    $.fn.extend({
+        animateCss: function (animationName) {
+            var animationEnd =
+                'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            this.addClass('animated ' + animationName).one(animationEnd, function () {
+                $(this).removeClass('animated ' + animationName);
+            });
+            return this;
+        }
+    });
+
+
+    $('.element-large').mouseenter(function () {
+        $(this).animateCss('pulse');
+    });
+
+    $('.element').mouseenter(function () {
+        $(this).animateCss('pulse');
+    });
+
+</script>

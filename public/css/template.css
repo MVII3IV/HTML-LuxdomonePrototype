@@ -1,0 +1,125 @@
+.navbar-inverse {
+    background-color: #000;
+    border-color: #080808;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-nav>li>a {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.navbar {
+    min-height: 32px !important
+}
+
+body {
+    background-image: url("..//img/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.element-large {
+    background-color: rgba(177, 177, 177, 0.14);
+    width: 200px;
+    height: 410px;
+    margin: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.52);
+}
+
+.element-large:hover {
+    background-color: #057bb9;
+}
+
+.element {
+    background-color: rgba(177, 177, 177, 0.14);
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.52);
+}
+
+.element:hover {
+    background-color: #057bb9;
+}
+
+.center-large {
+    text-align: center;
+    line-height: 410px;
+    color: white;
+}
+
+div.center-large i {
+    text-align: center;
+    line-height: 410px;
+    color: white;
+    font-size: 80px;
+}
+
+div.center-large p {
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.center {
+    text-align: center;
+    line-height: 200px;
+    color: white;
+}
+
+div.center i {
+    text-align: center;
+    line-height: 180px;
+    color: white;
+    font-size: 60px;
+}
+
+div.center p {
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.back {
+    background-color: rgba(177, 177, 177, 0.14);
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.52);
+}
+
+div.back i {
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-size: 60px;
+}
+
+div.back p {
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
