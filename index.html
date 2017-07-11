@@ -2,6 +2,7 @@
 
 <head>
     <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="jquery/jquery.js"></script>
     <script src="angular/angular.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
@@ -48,13 +49,57 @@
             background-color: black;
         }
 
-        .row {
-            text-align: center;
+        .element-large {
+            background-color: #0690d9;
+            width: 200px;
+            height: 410px;
+            margin: 5px;
         }
 
-        .col-md-2 {
-            display: inline-block;
+            .element-large:hover{
+                background-color: #057bb9;
+            }
+
+
+        .element {
+            background-color: #0690d9;
+            width: 200px;
+            height: 200px;
+            margin: 5px;
         }
+
+            .element:hover{
+                background-color: #057bb9;
+            }
+
+        .element- {
+            background-color: #0690d9;
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+        }
+
+            .element:hover{
+                background-color: #057bb9;
+            }
+
+        
+
+
+        .center{
+            display:inline-block;
+            font-size: 40px;
+            line-height: 50px;
+            color:white;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            vertical-align: center;
+        }
+
+
+
+
     </style>
 
 </head>
@@ -74,17 +119,54 @@
     </nav>
 
     <br>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2">
-                <h1>hola</h1>
-            </div>
+    <div class="container" style="margin-top:200px">
 
-            <div class="col-md-2">
-                <h1>hola</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 style="color:white">LUXDOM ONE</h1>
             </div>
         </div>
+
+        <br>
+        <div class="row">
+
+            <div class="col-md-2 element-large">
+                <div class="center"> 
+                    <i class="fa fa-tablet center" aria-hidden="true" style="color:white; font-size: 100px;"></i>
+                    <p style="color:white">DEVICES</p>
+                </div>
+                    
+          
+            </div>
+
+            <div class="col-md-2 element-large">
+            </div>
+
+            <div class="col-md-2 element">
+            </div>
+
+            <div class="col-md-2 element">
+            </div>
+
+            <div class="col-md-2 element">
+            </div>
+
+            <div class="col-md-2 element">
+            </div>
+
+            <div class="col-md-2 element">
+            </div>
+
+        </div>
+        
+
+    
+
     </div>
+
+
+
+
 
 </body>
 
